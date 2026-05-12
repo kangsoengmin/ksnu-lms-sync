@@ -1,20 +1,20 @@
 import os
 import re
 from playwright.sync_api import sync_playwright
-from ics import Calendar, Event
+from ics import Calendar, Event, DisplayAlarm
+from datetime import timedelta
 
-# GitHub Secrets에 저장할 환경 변수명을 읽어옵니다.
-# 로컬 테스트 시에는 이 변수들에 직접 값을 넣어도 되지만, GitHub 업로드 전에는 아래처럼 유지하세요.
+# GitHub Secrets 환경 변수
 USER_ID = os.environ.get("LMS_ID")
 USER_PW = os.environ.get("LMS_PW")
 
 def get_lms_assignments():
     if not USER_ID or not USER_PW:
-        print("❌ 오류: 환경 변수(LMS_ID, LMS_PW)가 설정되지 않았습니다.")
+        print("❌ 환경 변수 미설정")
         return
 
     with sync_playwright() as p:
-        # 서버(GitHub) 환경에서는 브라우저 창을 띄우지 않는 headless 모드로 실행합니다.
+        # 서버 환경용 Headless 모드
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(viewport={'width': 1280, 'height': 800})
         page = context.new_page()
@@ -28,17 +28,15 @@ def get_lms_assignments():
             page.fill("#pw", USER_PW)
             page.press("#pw", "Enter")
 
-            # 로그인 후 '내 강의실 홈'으로 이동
             print("🚀 내 강의실 홈으로 이동...")
             study_url = "https://eclass.kunsan.ac.kr/Study.do?cmd=viewStudyMyClassroom&boardInfoDTO.boardInfoGubun=myclassroom"
             page.goto(study_url, wait_until="networkidle")
 
-            # 일정 위젯 로드 대기
             page.wait_for_selector("li.work", timeout=15000)
             assignments = page.query_selector_all("li.work div.content")
             
             cal = Calendar()
-            seen_tasks = set() # 중복 제거용 집합
+            seen_tasks = set()
             
             for task in assignments:
                 title = task.get_attribute("title")
@@ -48,33 +46,46 @@ def get_lms_assignments():
                     subject = spans[0].inner_text().strip()
                     date_text = spans[-1].inner_text().strip()
                     
-                    # 중복 체크 (과목-제목-날짜 조합)
-                    task_id = f"{subject}-{title}-{date_text}"
-                    if task_id in seen_tasks:
+                    event_name = f"[{subject}] {title}"
+                    if event_name in seen_tasks:
                         continue
                     
-                    # 날짜 추출 (YYYY.MM.DD HH:MM)
                     dates = re.findall(r"(\d{4}\.\d{2}\.\d{2} \d{2}:\d{2})", date_text)
                     
                     if len(dates) == 2:
                         event = Event()
-                        event.name = f"[{subject}] {title}"
-                        # ics 표준 형식으로 변환
+                        event.name = event_name
                         event.begin = dates[0].replace(".", "-") + ":00"
                         event.end = dates[1].replace(".", "-") + ":00"
                         event.description = f"과목: {subject}\n출처: 군산대 eClass 자동 동기화"
                         
-                        cal.events.add(event)
-                        seen_tasks.add(task_id)
-                        print(f"✅ 추가 완료: {event.name}")
+                        # --- [3단계 오전 9시 알람 로직] ---
+                        # 알람 설정 리스트: (기준일, 며칠 전)
+                        alarm_targets = [
+                            (event.begin, -1), # 시작 1일 전
+                            (event.end, -1),   # 마감 1일 전
+                            (event.end, -3)    # 마감 3일 전
+                        ]
+                        
+                        for base_day, offset in alarm_targets:
+                            # 기준일에서 offset만큼 이동 후 오전 9시 정각 설정
+                            target_time = base_day.shift(days=offset).replace(hour=9, minute=0, second=0)
+                            
+                            # 이벤트 시작 시간(begin) 기준의 상대적 오프셋 계산
+                            trigger_offset = target_time - event.begin
+                            
+                            alarm = DisplayAlarm(trigger=trigger_offset)
+                            event.alarms.append(alarm)
+                        # ------------------------------
 
-            # .ics 파일 저장
+                        cal.events.add(event)
+                        seen_tasks.add(event_name)
+                        print(f"✅ 알람 3종 설정 완료: {event.name}")
+
             if len(cal.events) > 0:
                 with open('ksnu_assignments.ics', 'w', encoding='utf-8') as f:
                     f.writelines(cal.serialize_iter())
-                print(f"✨ 총 {len(cal.events)}개의 일정이 저장되었습니다.")
-            else:
-                print("⚠️ 저장할 일정이 없습니다.")
+                print(f"✨ 성공! {len(cal.events)}개의 일정이 저장되었습니다.")
 
         except Exception as e:
             print(f"❌ 오류 발생: {e}")
