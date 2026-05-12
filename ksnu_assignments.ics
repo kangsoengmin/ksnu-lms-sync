@@ -5,18 +5,18 @@ BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:
-TRIGGER:P4DT9H
+TRIGGER:-P1DT15H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:
-TRIGGER:P6DT9H
+TRIGGER:PT9H
 END:VALARM
-DESCRIPTION:📌 과목: 인공지능_02\n⏰ 마감: 2026.05.14 23:59\n\n📝 [내용]\n이수구분	학 점	공동교수정보\n전공선택	3 학점	조회하기\n\n출처: 군산대 eClass
-DTEND:20260514T145900Z
-DTSTART:20260506T150000Z
-SUMMARY:[인공지능_02] [과제]5월 7일 과제
-UID:b8af7d87-4482-4ccf-b3cf-d84ca65fae65@b8af.org
+DESCRIPTION:📌 과목명: 기계학습_01\n⏰ 마감기한: 2026.05.01 23:59\n----------------------------\n📝 [과제 상세 설명]\n\n강의 필기 내용을 제출하세요.\n\n----------------------------\n출처: 군산대 eClass 자동 동기화
+DTEND:20260501T145900Z
+DTSTART:20260429T150000Z
+SUMMARY:[기계학습_01] [과제]9주차 목요일 강의 필기 내용 제출
+UID:ab8c2ef2-87a9-483c-af93-7a7942feadc4@ab8c.org
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -29,28 +29,11 @@ ACTION:DISPLAY
 DESCRIPTION:
 TRIGGER:P2W4DT9H
 END:VALARM
-DESCRIPTION:📌 과목: 지능형영상처리_02\n⏰ 마감: 2026.05.03 23:59\n\n📝 [내용]\n이수구분	학 점	공동교수정보\n전공선택	3 학점	조회하기\n\n출처: 군산대 eClass
+DESCRIPTION:📌 과목명: 지능형영상처리_02\n⏰ 마감기한: 2026.05.03 23:59\n----------------------------\n📝 [과제 상세 설명]\n\n7주차 강의교안에 명시된 대로\, NeRF 보고서를 작성하여 제출해주시기 바랍니다. \n\n\n\n\n가산점 및 요구사항은 강의교안을 참고하여주시기 바랍니다. \n\n\n\n\n과제 수행에 생각보다 오랜 시간이 걸릴 수 있습니다. \n\n\n\n\n중간고사 기간을 활용하여 시도 바라며\, 반드시 본인 가상환경에서 실행 바랍니다.\n\n----------------------------\n출처: 군산대 eClass 자동 동기화
 DTEND:20260503T145900Z
 DTSTART:20260413T150000Z
 SUMMARY:[지능형영상처리_02] [과제]NeRF 보고서 작성
-UID:27aef592-182e-44d6-ab63-639f6efb9918@27ae.org
-END:VEVENT
-BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:
-TRIGGER:-P1DT15H
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:
-TRIGGER:PT9H
-END:VALARM
-DESCRIPTION:📌 과목: 기계학습_01\n⏰ 마감: 2026.05.01 23:59\n\n📝 [내용]\n이수구분	학 점	공동교수정보\n전공선택	3 학점	조회하기\n\n출처: 군산대 eClass
-DTEND:20260501T145900Z
-DTSTART:20260429T150000Z
-SUMMARY:[기계학습_01] [과제]9주차 목요일 강의 필기 내용 제출
-UID:3e602d5e-7f45-45f2-9dda-87ad2ded9361@3e60.org
+UID:7a608698-1c0e-4dc1-aae5-c9f8eddfbf61@7a60.org
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -63,10 +46,27 @@ ACTION:DISPLAY
 DESCRIPTION:
 TRIGGER:P2W6DT9H
 END:VALARM
-DESCRIPTION:📌 과목: 지능형영상처리_02\n⏰ 마감: 2026.05.31 23:59\n\n📝 [내용]\n이수구분	학 점	공동교수정보\n전공선택	3 학점	조회하기\n\n출처: 군산대 eClass
+DESCRIPTION:📌 과목명: 지능형영상처리_02\n⏰ 마감기한: 2026.05.31 23:59\n----------------------------\n📝 [과제 상세 설명]\n\n11주차 강의교안에 명시된 대로\, 3DGS 보고서를 작성하여 제출해주시기 바랍니다. \n\n\n\n\n가산점 및 요구사항은 강의교안을 참고하여주시기 바랍니다. \n\n\n\n\n과제 수행에 생각보다 오랜 시간이 걸릴 수 있습니다. \n\n\n\n\n반드시 본인 가상환경에서 실행 바랍니다.\n\n----------------------------\n출처: 군산대 eClass 자동 동기화
 DTEND:20260531T145900Z
 DTSTART:20260509T150000Z
 SUMMARY:[지능형영상처리_02] [과제]3DGS 보고서 작성
-UID:a298286a-0b8e-487a-b13d-09fb7a230183@a298.org
+UID:9838c89d-c65c-4b3f-b1f9-fbdfaae8c600@9838.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:
+TRIGGER:P4DT9H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:
+TRIGGER:P6DT9H
+END:VALARM
+DESCRIPTION:📌 과목명: 인공지능_02\n⏰ 마감기한: 2026.05.14 23:59\n----------------------------\n📝 [과제 상세 설명]\n\nfrom tensorflow import keras\n\nfrom sklearn.model_selection import train_test_split\n\n(train_input\, train_target)\, (test_input\, test_target) =\\\n\n         keras.datasets.fashion_mnist.load_data()\n\n\n\n\n데이터 다운로딩 코드입니다. 여기서 교재에서는 Train_input\, 데이터를 가지고 실습을 진행하였습니다. \n\ntest_input데이터를 가지고 교재와 같은 순서로 실습하고\, 그 결과를 한글파일로 보고서 제출해주세요.\n\n----------------------------\n출처: 군산대 eClass 자동 동기화
+DTEND:20260514T145900Z
+DTSTART:20260506T150000Z
+SUMMARY:[인공지능_02] [과제]5월 7일 과제
+UID:4759132a-1977-47e2-9de2-1f7199eb5882@4759.org
 END:VEVENT
 END:VCALENDAR
