@@ -2,31 +2,36 @@ name: KSNU LMS Sync
 
 on:
   schedule:
-    - cron: '0 18 * * *' # 매일 한국 시간 새벽 3시 실행
-  workflow_dispatch: # 수동 실행 버튼
+    # 매일 UTC 18:00 (한국 시간 새벽 3시)에 자동으로 실행됩니다.
+    - cron: '0 18 * * *'
+  workflow_dispatch: # 사용자가 직접 실행 버튼을 누를 수 있게 합니다.
 
+# 저장소에 결과물(.ics 파일)을 업데이트하기 위해 쓰기 권한이 필요합니다.
 permissions:
   contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4 # v4로 업데이트
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v5 # v5로 업데이트
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
       - name: Install dependencies
         run: |
-          pip install playwright ics
+          # ics, playwright와 함께 시차 보정을 위한 arrow를 설치합니다.
+          pip install playwright ics arrow
           playwright install chromium
 
       - name: Run LMS Sync Script
         env:
+          # Settings > Secrets > Actions에 등록한 변수들을 가져옵니다.
           LMS_ID: ${{ secrets.LMS_ID }}
           LMS_PW: ${{ secrets.LMS_PW }}
         run: python sync_lms.py
@@ -35,6 +40,8 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
+          # 생성된 캘린더 파일을 스테이징합니다.
           git add ksnu_assignments.ics
+          # 변경사항이 있을 때만 커밋하고, [skip ci]를 넣어 무한 루프를 방지합니다.
           git commit -m "Update LMS assignments [skip ci]" || exit 0
           git push
