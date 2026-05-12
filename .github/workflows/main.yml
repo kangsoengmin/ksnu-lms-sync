@@ -2,18 +2,21 @@ name: KSNU LMS Sync
 
 on:
   schedule:
-    - cron: '0 18 * * *' # 매일 한국 시간 새벽 3시 실행 (UTC 18:00)
-  workflow_dispatch: # 버튼 눌러서 수동으로도 실행 가능하게 함
+    - cron: '0 18 * * *' # 매일 한국 시간 새벽 3시 실행
+  workflow_dispatch: # 수동 실행 버튼
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 # v4로 업데이트
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5 # v5로 업데이트
         with:
           python-version: '3.10'
 
