@@ -5,6 +5,7 @@ from playwright.sync_api import sync_playwright
 from ics import Calendar, Event, DisplayAlarm
 from datetime import timedelta
 
+# GitHub Secrets 환경 변수
 USER_ID = os.environ.get("LMS_ID")
 USER_PW = os.environ.get("LMS_PW")
 
@@ -31,16 +32,17 @@ def get_lms_assignments():
 
             page.wait_for_selector("li.work", timeout=15000)
             
-            # 과제 링크들을 미리 확보합니다.
-            assignment_elements = page.query_selector_all("li.work div.content")
-            
             cal = Calendar()
             seen_tasks = set()
             
-            # 상세 페이지를 왔다 갔다 해야 하므로 인덱스로 접근합니다.
-            for i in range(len(assignment_elements)):
-                # 매번 요소를 새로 찾아야 'Stale Element' 에러를 방지할 수 있습니다.
-                task = page.query_selector_all("li.work div.content")[i]
+            # 목록 개수를 파악합니다.
+            task_count = len(page.query_selector_all("li.work div.content"))
+            
+            for i in range(task_count):
+                # 매번 목록을 새로 갱신해야 StaleElement 오류가 나지 않습니다.
+                tasks = page.query_selector_all("li.work div.content")
+                task = tasks[i]
+                
                 title = task.get_attribute("title")
                 spans = task.query_selector_all("span")
                 
@@ -51,22 +53,25 @@ def get_lms_assignments():
                     
                     if event_name in seen_tasks: continue
 
-                    # --- [상세 내용 추출 로직 시작] ---
-                    print(f"📖 '{event_name}' 내용 읽는 중...")
-                    task.click() # 과제 클릭하여 상세 페이지 진입
+                    # --- [상세 내용 추출 로직] ---
+                    print(f"📖 '{event_name}' 상세 내용 추출 시도 중...")
+                    task.click() # 상세 페이지 진입
                     page.wait_for_load_state("networkidle")
                     
-                    # 상세 내용이 들어있는 영역의 텍스트를 가져옵니다.
-                    # eClass의 전형적인 본문 영역 셀렉터를 사용합니다.
-                    description_element = page.query_selector(".board_view_area") 
-                    task_description = ""
-                    if description_element:
-                        task_description = description_element.inner_text().strip()
+                    # 본문 내용이 담긴 여러 가능한 셀렉터를 시도합니다.
+                    content_selectors = [".board_view_area", ".board_view", ".course_view", "table.view_table"]
+                    task_description = "상세 내용 없음"
+                    
+                    for selector in content_selectors:
+                        desc_element = page.query_selector(selector)
+                        if desc_element:
+                            task_description = desc_element.inner_text().strip()
+                            break
                     
                     # 다시 목록으로 돌아가기
                     page.go_back()
                     page.wait_for_selector("li.work")
-                    # -----------------------------------
+                    # -----------------------------
 
                     dates = re.findall(r"(\d{4}\.\d{2}\.\d{2} \d{2}:\d{2})", date_text)
                     if len(dates) == 2:
@@ -75,23 +80,33 @@ def get_lms_assignments():
                         event.begin = arrow.get(dates[0], "YYYY.MM.DD HH:mm").replace(tzinfo='Asia/Seoul')
                         event.end = arrow.get(dates[1], "YYYY.MM.DD HH:mm").replace(tzinfo='Asia/Seoul')
                         
-                        # 가져온 내용을 캘린더 메모란에 넣습니다.
-                        event.description = f"과목: {subject}\n\n[과제 내용]\n{task_description}\n\n출처: 군산대 eClass"
+                        # [메모란 구성]
+                        event.description = (
+                            f"📌 과목명: {subject}\n"
+                            f"⏰ 마감일: {dates[1]}\n"
+                            f"----------------------------\n"
+                            f"📝 [과제 내용]\n\n{task_description}\n\n"
+                            f"----------------------------\n"
+                            f"출처: 군산대 eClass 자동 동기화"
+                        )
                         
                         # 알람 설정 (마감 3일 전, 1일 전 오전 9시)
                         for d in [-3, -1]:
                             target_time = event.end.shift(days=d).replace(hour=9, minute=0, second=0)
-                            event.alarms.append(DisplayAlarm(trigger=target_time - event.begin))
+                            trigger_offset = target_time - event.begin
+                            event.alarms.append(DisplayAlarm(trigger=trigger_offset))
 
                         cal.events.add(event)
                         seen_tasks.add(event_name)
+                        print(f"✅ 추출 완료 (내용 포함): {event_name}")
 
             with open('ksnu_assignments.ics', 'w', encoding='utf-8') as f:
                 f.writelines(cal.serialize_iter())
-            print(f"\n✨ 내용 포함 완료! 총 {len(cal.events)}개의 일정이 저장되었습니다.")
+            print(f"\n✨ 성공! 내용이 포함된 {len(cal.events)}개의 일정을 저장했습니다.")
 
         except Exception as e:
-            print(f"❌ 오류 발생: {e}")
+            print(f"❌ 오류 원인 분석 코드를 실행합니다...: {e}")
+            # 디버깅을 위해 현재 화면을 캡처하거나 에러 위치를 로깅할 수 있습니다.
         finally:
             browser.close()
 
