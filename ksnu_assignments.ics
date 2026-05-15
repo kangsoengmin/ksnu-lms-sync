@@ -5,40 +5,6 @@ BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:
-TRIGGER:P2W4DT9H
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:
-TRIGGER:P2W6DT9H
-END:VALARM
-DESCRIPTION:과목: 지능형영상처리_02\n\n[과제 내용]\n11주차 강의교안에 명시된 대로\, 3DGS 보고서를 작성하여 제출해주시기 바랍니다.\n\n가산점 및 요구사항은 강의교안을 참고하여주시기 바랍니다.\n\n과제 수행에 생각보다 오랜 시간이 걸릴 수 있습니다.\n\n반드시 본인 가상환경에서 실행 바랍니다.\n\n출처: 군산대 eClass\n최신화 시간: 2026-05-15 04:55
-DTEND:20260531T145900Z
-DTSTART:20260509T150000Z
-SUMMARY:[지능형영상처리_02] [과제]3DGS 보고서 작성
-UID:941ab97e-fce7-4ba4-93f3-f57b5cb3fc17@941a.org
-END:VEVENT
-BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:
-TRIGGER:-P1DT15H
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:
-TRIGGER:PT9H
-END:VALARM
-DESCRIPTION:과목: 인공지능_02\n\n[과제 내용]\n상세 내용을 가져오지 못했습니다.\n\n출처: 군산대 eClass\n최신화 시간: 2026-05-15 04:55
-DTEND:20260430T145900Z
-DTSTART:20260428T150000Z
-SUMMARY:[인공지능_02] [과제]6-3 코딩과 그 결과를 캡쳐해서 업로딩 하세요.
-UID:8f066e51-b337-41b9-b700-fad50c5bf0ce@8f06.org
-END:VEVENT
-BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:
 TRIGGER:P2W2DT9H
 END:VALARM
 BEGIN:VALARM
@@ -46,11 +12,11 @@ ACTION:DISPLAY
 DESCRIPTION:
 TRIGGER:P2W4DT9H
 END:VALARM
-DESCRIPTION:과목: 지능형영상처리_02\n\n[과제 내용]\n7주차 강의교안에 명시된 대로\, NeRF 보고서를 작성하여 제출해주시기 바랍니다.\n\n가산점 및 요구사항은 강의교안을 참고하여주시기 바랍니다.\n\n과제 수행에 생각보다 오랜 시간이 걸릴 수 있습니다.\n\n중간고사 기간을 활용하여 시도 바라며\, 반드시 본인 가상환경에서 실행 바랍니다.\n\n출처: 군산대 eClass\n최신화 시간: 2026-05-15 04:55
+DESCRIPTION:과목: 지능형영상처리_02\n\n[과제 내용]\n7주차 강의교안에 명시된 대로\, NeRF 보고서를 작성하여 제출해주시기 바랍니다.\n\n가산점 및 요구사항은 강의교안을 참고하여주시기 바랍니다.\n\n과제 수행에 생각보다 오랜 시간이 걸릴 수 있습니다.\n\n중간고사 기간을 활용하여 시도 바라며\, 반드시 본인 가상환경에서 실행 바랍니다.\n\n출처: 군산대 eClass\n최신화 시간: 2026-05-16 04:48
 DTEND:20260503T145900Z
 DTSTART:20260413T150000Z
 SUMMARY:[지능형영상처리_02] [과제]NeRF 보고서 작성
-UID:4ac11630-2b5d-4ec6-a4f2-99ebe2393de9@4ac1.org
+UID:2e69cd08-d5a9-4d42-9b36-90f65ffb1e51@2e69.org
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -63,10 +29,27 @@ ACTION:DISPLAY
 DESCRIPTION:
 TRIGGER:PT9H
 END:VALARM
-DESCRIPTION:과목: 기계학습_01\n\n[과제 내용]\n강의 필기 내용을 제출하세요.\n\n출처: 군산대 eClass\n최신화 시간: 2026-05-15 04:55
+DESCRIPTION:과목: 기계학습_01\n\n[과제 내용]\n상세 내용을 가져오지 못했습니다.\n\n출처: 군산대 eClass\n최신화 시간: 2026-05-16 04:48
 DTEND:20260501T145900Z
 DTSTART:20260429T150000Z
 SUMMARY:[기계학습_01] [과제]9주차 목요일 강의 필기 내용 제출
-UID:bcb44521-d8f9-4edb-8e06-f4df6c889cbd@bcb4.org
+UID:4a5fb6e0-bbd8-48d1-988d-2e994e728aa1@4a5f.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:
+TRIGGER:P2W4DT9H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:
+TRIGGER:P2W6DT9H
+END:VALARM
+DESCRIPTION:과목: 지능형영상처리_02\n\n[과제 내용]\n11주차 강의교안에 명시된 대로\, 3DGS 보고서를 작성하여 제출해주시기 바랍니다.\n\n가산점 및 요구사항은 강의교안을 참고하여주시기 바랍니다.\n\n과제 수행에 생각보다 오랜 시간이 걸릴 수 있습니다.\n\n반드시 본인 가상환경에서 실행 바랍니다.\n\n출처: 군산대 eClass\n최신화 시간: 2026-05-16 04:48
+DTEND:20260531T145900Z
+DTSTART:20260509T150000Z
+SUMMARY:[지능형영상처리_02] [과제]3DGS 보고서 작성
+UID:ef0afcb9-3c4b-41f2-a32f-11efe0afad2a@ef0a.org
 END:VEVENT
 END:VCALENDAR
