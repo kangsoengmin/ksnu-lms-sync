@@ -12,28 +12,11 @@ ACTION:DISPLAY
 DESCRIPTION:
 TRIGGER:P6DT9H
 END:VALARM
-DESCRIPTION:과목: 인공지능_02\n\n[과제 내용]\nfrom tensorflow import keras\n\nfrom sklearn.model_selection import train_test_split\n\n(train_input\, train_target)\, (test_input\, test_target) =\\\n\n         keras.datasets.fashion_mnist.load_data()\n\n데이터 다운로딩 코드입니다. 여기서 교재에서는 Train_input\, 데이터를 가지고 실습을 진행하였습니다.\n\ntest_input데이터를 가지고 교재와 같은 순서로 실습하고\, 그 결과를 한글파일로 보고서 제출해주세요.\n\n출처: 군산대 eClass\n최신화 시간: 2026-05-18 04:19
+DESCRIPTION:과목: 인공지능_02\n\n[과제 내용]\nfrom tensorflow import keras\n\nfrom sklearn.model_selection import train_test_split\n\n(train_input\, train_target)\, (test_input\, test_target) =\\\n\n         keras.datasets.fashion_mnist.load_data()\n\n데이터 다운로딩 코드입니다. 여기서 교재에서는 Train_input\, 데이터를 가지고 실습을 진행하였습니다.\n\ntest_input데이터를 가지고 교재와 같은 순서로 실습하고\, 그 결과를 한글파일로 보고서 제출해주세요.\n\n출처: 군산대 eClass\n최신화 시간: 2026-05-19 04:54
 DTEND:20260514T145900Z
 DTSTART:20260506T150000Z
 SUMMARY:[인공지능_02] [과제]5월 7일 과제
-UID:d5c5e54f-75fb-40da-a9fe-d764abbf02be@d5c5.org
-END:VEVENT
-BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:
-TRIGGER:P2W2DT9H
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:
-TRIGGER:P2W4DT9H
-END:VALARM
-DESCRIPTION:과목: 지능형영상처리_02\n\n[과제 내용]\n상세 내용을 가져오지 못했습니다.\n\n출처: 군산대 eClass\n최신화 시간: 2026-05-18 04:19
-DTEND:20260503T145900Z
-DTSTART:20260413T150000Z
-SUMMARY:[지능형영상처리_02] [과제]NeRF 보고서 작성
-UID:009d1fbc-6bfe-4aaf-be8b-fac84b13be84@009d.org
+UID:77d0fc26-e826-4f62-bc8d-49add7c0e7f2@77d0.org
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -46,11 +29,11 @@ ACTION:DISPLAY
 DESCRIPTION:
 TRIGGER:P2W6DT9H
 END:VALARM
-DESCRIPTION:과목: 지능형영상처리_02\n\n[과제 내용]\n11주차 강의교안에 명시된 대로\, 3DGS 보고서를 작성하여 제출해주시기 바랍니다.\n\n가산점 및 요구사항은 강의교안을 참고하여주시기 바랍니다.\n\n과제 수행에 생각보다 오랜 시간이 걸릴 수 있습니다.\n\n반드시 본인 가상환경에서 실행 바랍니다.\n\n출처: 군산대 eClass\n최신화 시간: 2026-05-18 04:19
+DESCRIPTION:과목: 지능형영상처리_02\n\n[과제 내용]\n11주차 강의교안에 명시된 대로\, 3DGS 보고서를 작성하여 제출해주시기 바랍니다.\n\n가산점 및 요구사항은 강의교안을 참고하여주시기 바랍니다.\n\n과제 수행에 생각보다 오랜 시간이 걸릴 수 있습니다.\n\n반드시 본인 가상환경에서 실행 바랍니다.\n\n출처: 군산대 eClass\n최신화 시간: 2026-05-19 04:54
 DTEND:20260531T145900Z
 DTSTART:20260509T150000Z
 SUMMARY:[지능형영상처리_02] [과제]3DGS 보고서 작성
-UID:20d3abeb-b7b3-425f-a266-d3cf33873312@20d3.org
+UID:bd83a4a8-b81f-4275-a56f-9033fcd51a41@bd83.org
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -63,27 +46,27 @@ ACTION:DISPLAY
 DESCRIPTION:
 TRIGGER:PT9H
 END:VALARM
-DESCRIPTION:과목: 기계학습_01\n\n[과제 내용]\n필기한 내용을 제출하세요.\n\n출처: 군산대 eClass\n최신화 시간: 2026-05-18 04:19
-DTEND:20260508T145900Z
-DTSTART:20260506T150000Z
-SUMMARY:[기계학습_01] [과제]10주차 목요일 필기 내용 제출
-UID:4b6319b0-9b5f-45d7-a787-170a6c1d168b@4b63.org
-END:VEVENT
-BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:
-TRIGGER:-P1DT15H
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:
-TRIGGER:PT9H
-END:VALARM
-DESCRIPTION:과목: 인공지능_02\n\n[과제 내용]\n7-2절 테스트 데이터에 대한 정확도 측정까지 완료한 코드 수행결과를 캡쳐해서 업로딩하세요\n\n출처: 군산대 eClass\n최신화 시간: 2026-05-18 04:19
+DESCRIPTION:과목: 인공지능_02\n\n[과제 내용]\n7-2절 테스트 데이터에 대한 정확도 측정까지 완료한 코드 수행결과를 캡쳐해서 업로딩하세요\n\n출처: 군산대 eClass\n최신화 시간: 2026-05-19 04:54
 DTEND:20260507T145900Z
 DTSTART:20260505T150000Z
 SUMMARY:[인공지능_02] [과제]7-2절 테스트 데이터에 대한 정확도 측정까지 완료한 코드 수행결과를 캡쳐해서 업로딩하세요
-UID:e05ffba1-7dee-4722-a127-3e75086f10b1@e05f.org
+UID:3a1d5c62-e49b-4761-a532-d667b87390c9@3a1d.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:
+TRIGGER:-P1DT15H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:
+TRIGGER:PT9H
+END:VALARM
+DESCRIPTION:과목: 기계학습_01\n\n[과제 내용]\n필기한 내용을 제출하세요.\n\n출처: 군산대 eClass\n최신화 시간: 2026-05-19 04:54
+DTEND:20260508T145900Z
+DTSTART:20260506T150000Z
+SUMMARY:[기계학습_01] [과제]10주차 목요일 필기 내용 제출
+UID:736f3d1f-4707-4675-8184-78c4bd8e49db@736f.org
 END:VEVENT
 END:VCALENDAR
