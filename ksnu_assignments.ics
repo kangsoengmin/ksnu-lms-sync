@@ -5,18 +5,18 @@ BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:
-TRIGGER:P5DT9H
+TRIGGER:P4DT9H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:
-TRIGGER:P1WT9H
+TRIGGER:P6DT9H
 END:VALARM
-DESCRIPTION:과목: 지능형영상처리_02\n\n[과제 내용]\n12주차 강의교안을 참고하여 기말고사 대체텀프로젝트를 수행 후\,\n\n파일들을 하나의 zip 파일로 압축하여 업로드 바랍니다.\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-09 05:27
-DTEND:20260610T145900Z
-DTSTART:20260601T150000Z
-SUMMARY:[지능형영상처리_02] [과제]기말고사 대체 텀프로젝트
-UID:7c23722a-3b43-4851-9684-121a1371c6c1@7c23.org
+DESCRIPTION:과목: 인공지능_02\n\n[과제 내용]\n상세 내용을 가져오지 못했습니다.\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-10 05:15
+DTEND:20260526T145900Z
+DTSTART:20260518T150000Z
+SUMMARY:[인공지능_02] [과제]8_3 코딩과제 합성곱층 추가하여 실행화면을 캡쳐해서 업로딩 하세요
+UID:35bc7289-c8a2-444c-9c11-a3a859f3d248@35bc.org
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -29,45 +29,11 @@ ACTION:DISPLAY
 DESCRIPTION:
 TRIGGER:P2W6DT9H
 END:VALARM
-DESCRIPTION:과목: 지능형영상처리_02\n\n[과제 내용]\n11주차 강의교안에 명시된 대로\, 3DGS 보고서를 작성하여 제출해주시기 바랍니다.\n\n가산점 및 요구사항은 강의교안을 참고하여주시기 바랍니다.\n\n과제 수행에 생각보다 오랜 시간이 걸릴 수 있습니다.\n\n반드시 본인 가상환경에서 실행 바랍니다.\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-09 05:27
+DESCRIPTION:과목: 지능형영상처리_02\n\n[과제 내용]\n11주차 강의교안에 명시된 대로\, 3DGS 보고서를 작성하여 제출해주시기 바랍니다.\n\n가산점 및 요구사항은 강의교안을 참고하여주시기 바랍니다.\n\n과제 수행에 생각보다 오랜 시간이 걸릴 수 있습니다.\n\n반드시 본인 가상환경에서 실행 바랍니다.\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-10 05:15
 DTEND:20260531T145900Z
 DTSTART:20260509T150000Z
 SUMMARY:[지능형영상처리_02] [과제]3DGS 보고서 작성
-UID:a56ac44c-f1fc-41ed-a330-0e75bfd665f6@a56a.org
-END:VEVENT
-BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:
-TRIGGER:P4DT9H
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:
-TRIGGER:P6DT9H
-END:VALARM
-DESCRIPTION:과목: 인공지능_02\n\n[과제 내용]\n8_3 코딩과제에서 하나의 합성곱층을 임의로 추가해서 그 특징맵을 시각화하고 캡쳐해서 업로딩하세요.\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-09 05:27
-DTEND:20260526T145900Z
-DTSTART:20260518T150000Z
-SUMMARY:[인공지능_02] [과제]8_3 코딩과제 합성곱층 추가하여 실행화면을 캡쳐해서 업로딩 하세요
-UID:b9579617-d34d-4970-9c6b-c39e13105e6f@b957.org
-END:VEVENT
-BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:
-TRIGGER:P4DT9H
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:
-TRIGGER:P6DT9H
-END:VALARM
-DESCRIPTION:과목: 인공지능_02\n\n[과제 내용]\n9_3 코딩 결과를 캡쳐해서 업로딩하세요\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-09 05:27
-DTEND:20260609T145900Z
-DTSTART:20260601T150000Z
-SUMMARY:[인공지능_02] [과제]9_3 코딩 결과를 캡쳐해서 업로딩하세요
-UID:61248639-b882-4c79-b500-fd39a3c21e4a@6124.org
+UID:a2d9f854-9612-4576-bd66-421ae7c48bf1@a2d9.org
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -80,27 +46,27 @@ ACTION:DISPLAY
 DESCRIPTION:
 TRIGGER:P5DT9H
 END:VALARM
-DESCRIPTION:과목: 인공지능_02\n\n[과제 내용]\n9_2에서 하이퍼파라메터를 수정하고\, 수정된 사항과 함께 그 결과를 캡쳐해서 업로딩하세요.\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-09 05:27
+DESCRIPTION:과목: 인공지능_02\n\n[과제 내용]\n9_2에서 하이퍼파라메터를 수정하고\, 수정된 사항과 함께 그 결과를 캡쳐해서 업로딩하세요.\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-10 05:15
 DTEND:20260527T145900Z
 DTSTART:20260520T150000Z
 SUMMARY:[인공지능_02] [과제]9-2 코딩결과를 캡쳐해서 업로딩하세요
-UID:e976e412-68c2-4b1c-b541-60eabf925ca0@e976.org
+UID:f9b90f77-2da0-4b63-a492-3676da79a960@f9b9.org
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:
-TRIGGER:-P2DT15H
+TRIGGER:P5DT9H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:
-TRIGGER:-PT15H
+TRIGGER:P1WT9H
 END:VALARM
-DESCRIPTION:과목: 3D엔진프로그래밍_02\n\n[과제 내용]\n프로젝트 중간평가 (점수 공유)\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-09 05:27
-DTEND:20260525T005900Z
-DTSTART:20260524T150000Z
-SUMMARY:[3D엔진프로그래밍_02] [과제]프로젝트 중간평가 (점수 공유)
-UID:21b4c6ab-0348-4549-988a-03b3801c87e1@21b4.org
+DESCRIPTION:과목: 지능형영상처리_02\n\n[과제 내용]\n12주차 강의교안을 참고하여 기말고사 대체텀프로젝트를 수행 후\,\n\n파일들을 하나의 zip 파일로 압축하여 업로드 바랍니다.\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-10 05:15
+DTEND:20260610T145900Z
+DTSTART:20260601T150000Z
+SUMMARY:[지능형영상처리_02] [과제]기말고사 대체 텀프로젝트
+UID:7eff4b15-b283-4b20-9400-db3bef143134@7eff.org
 END:VEVENT
 END:VCALENDAR
