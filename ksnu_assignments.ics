@@ -5,23 +5,6 @@ BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:
-TRIGGER:P2W4DT9H
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:
-TRIGGER:P2W6DT9H
-END:VALARM
-DESCRIPTION:과목: 지능형영상처리_02\n\n[과제 내용]\n11주차 강의교안에 명시된 대로\, 3DGS 보고서를 작성하여 제출해주시기 바랍니다.\n\n가산점 및 요구사항은 강의교안을 참고하여주시기 바랍니다.\n\n과제 수행에 생각보다 오랜 시간이 걸릴 수 있습니다.\n\n반드시 본인 가상환경에서 실행 바랍니다.\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-14 04:45
-DTEND:20260531T145900Z
-DTSTART:20260509T150000Z
-SUMMARY:[지능형영상처리_02] [과제]3DGS 보고서 작성
-UID:a1dff1c9-90db-4a70-b6cc-5737d395de5e@a1df.org
-END:VEVENT
-BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:
 TRIGGER:P4DT9H
 END:VALARM
 BEGIN:VALARM
@@ -29,11 +12,11 @@ ACTION:DISPLAY
 DESCRIPTION:
 TRIGGER:P6DT9H
 END:VALARM
-DESCRIPTION:과목: 기계학습_01\n\n[과제 내용]\nPractice 7. Artificial Neural Networks의 Challenge Task에 대한 실습 소스코드와 결과화면을 제출하세요.\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-14 04:45
+DESCRIPTION:과목: 기계학습_01\n\n[과제 내용]\nPractice 7. Artificial Neural Networks의 Challenge Task에 대한 실습 소스코드와 결과화면을 제출하세요.\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-15 04:46
 DTEND:20260608T145900Z
 DTSTART:20260531T150000Z
 SUMMARY:[기계학습_01] [과제]Assignment 2. Artificial Neural Networks
-UID:86085c9e-9caa-4df1-aff9-add2407defa6@8608.org
+UID:b4d2b06e-b49c-4689-98d0-ed1f3f7b3b0b@b4d2.org
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -46,11 +29,11 @@ ACTION:DISPLAY
 DESCRIPTION:
 TRIGGER:P1WT9H
 END:VALARM
-DESCRIPTION:과목: 지능형영상처리_02\n\n[과제 내용]\n12주차 강의교안을 참고하여 기말고사 대체텀프로젝트를 수행 후\,\n\n파일들을 하나의 zip 파일로 압축하여 업로드 바랍니다.\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-14 04:45
+DESCRIPTION:과목: 지능형영상처리_02\n\n[과제 내용]\n12주차 강의교안을 참고하여 기말고사 대체텀프로젝트를 수행 후\,\n\n파일들을 하나의 zip 파일로 압축하여 업로드 바랍니다.\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-15 04:46
 DTEND:20260610T145900Z
 DTSTART:20260601T150000Z
 SUMMARY:[지능형영상처리_02] [과제]기말고사 대체 텀프로젝트
-UID:394ae268-023a-4013-9a7d-6053c73819c0@394a.org
+UID:f60c60df-dbd5-464a-87f8-cee630e8c21d@f60c.org
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -63,10 +46,27 @@ ACTION:DISPLAY
 DESCRIPTION:
 TRIGGER:P6DT9H
 END:VALARM
-DESCRIPTION:과목: 인공지능_02\n\n[과제 내용]\n9_3 코딩 결과를 캡쳐해서 업로딩하세요\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-14 04:45
+DESCRIPTION:과목: 인공지능_02\n\n[과제 내용]\n9_3 코딩 결과를 캡쳐해서 업로딩하세요\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-15 04:46
 DTEND:20260609T145900Z
 DTSTART:20260601T150000Z
 SUMMARY:[인공지능_02] [과제]9_3 코딩 결과를 캡쳐해서 업로딩하세요
-UID:7ef84a7e-af96-4382-a011-e81de7c2087c@7ef8.org
+UID:4a756ebe-9271-48a8-b541-31b45700e4b5@4a75.org
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:
+TRIGGER:P2W4DT9H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:
+TRIGGER:P2W6DT9H
+END:VALARM
+DESCRIPTION:과목: 지능형영상처리_02\n\n[과제 내용]\n상세 내용을 가져오지 못했습니다.\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-15 04:46
+DTEND:20260531T145900Z
+DTSTART:20260509T150000Z
+SUMMARY:[지능형영상처리_02] [과제]3DGS 보고서 작성
+UID:7c8be367-b021-4475-90fc-27c4eff3017e@7c8b.org
 END:VEVENT
 END:VCALENDAR
