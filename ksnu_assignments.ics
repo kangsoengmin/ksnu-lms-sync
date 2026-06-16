@@ -12,11 +12,11 @@ ACTION:DISPLAY
 DESCRIPTION:
 TRIGGER:P6DT9H
 END:VALARM
-DESCRIPTION:과목: 기계학습_01\n\n[과제 내용]\nPractice 7. Artificial Neural Networks의 Challenge Task에 대한 실습 소스코드와 결과화면을 제출하세요.\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-16 06:13
+DESCRIPTION:과목: 기계학습_01\n\n[과제 내용]\n상세 내용을 가져오지 못했습니다.\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-17 06:12
 DTEND:20260608T145900Z
 DTSTART:20260531T150000Z
 SUMMARY:[기계학습_01] [과제]Assignment 2. Artificial Neural Networks
-UID:f84b978e-e7fd-4b7b-a28c-7f5af2af11b8@f84b.org
+UID:7336473a-3707-4701-a717-4c16175467db@7336.org
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -29,11 +29,11 @@ ACTION:DISPLAY
 DESCRIPTION:
 TRIGGER:P6DT9H
 END:VALARM
-DESCRIPTION:과목: 인공지능_02\n\n[과제 내용]\n9_3 코딩 결과를 캡쳐해서 업로딩하세요\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-16 06:13
+DESCRIPTION:과목: 인공지능_02\n\n[과제 내용]\n9_3 코딩 결과를 캡쳐해서 업로딩하세요\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-17 06:12
 DTEND:20260609T145900Z
 DTSTART:20260601T150000Z
 SUMMARY:[인공지능_02] [과제]9_3 코딩 결과를 캡쳐해서 업로딩하세요
-UID:8e815ba7-58cf-457a-8192-aee685cf1468@8e81.org
+UID:bbd99276-ae7b-47f3-8302-ca8907d9b004@bbd9.org
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -46,10 +46,10 @@ ACTION:DISPLAY
 DESCRIPTION:
 TRIGGER:P1WT9H
 END:VALARM
-DESCRIPTION:과목: 지능형영상처리_02\n\n[과제 내용]\n12주차 강의교안을 참고하여 기말고사 대체텀프로젝트를 수행 후\,\n\n파일들을 하나의 zip 파일로 압축하여 업로드 바랍니다.\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-16 06:13
+DESCRIPTION:과목: 지능형영상처리_02\n\n[과제 내용]\n12주차 강의교안을 참고하여 기말고사 대체텀프로젝트를 수행 후\,\n\n파일들을 하나의 zip 파일로 압축하여 업로드 바랍니다.\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-17 06:12
 DTEND:20260610T145900Z
 DTSTART:20260601T150000Z
 SUMMARY:[지능형영상처리_02] [과제]기말고사 대체 텀프로젝트
-UID:4467c4cc-593a-4c55-bab2-200e4ccdeae2@4467.org
+UID:9a5973fc-183b-4a76-a78d-4c86ac83bb5f@9a59.org
 END:VEVENT
 END:VCALENDAR
