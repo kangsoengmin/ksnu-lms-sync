@@ -12,27 +12,27 @@ ACTION:DISPLAY
 DESCRIPTION:
 TRIGGER:P1WT9H
 END:VALARM
-DESCRIPTION:과목: 지능형영상처리_02\n\n[과제 내용]\n12주차 강의교안을 참고하여 기말고사 대체텀프로젝트를 수행 후\,\n\n파일들을 하나의 zip 파일로 압축하여 업로드 바랍니다.\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-24 05:15
+DESCRIPTION:과목: 지능형영상처리_02\n\n[과제 내용]\n12주차 강의교안을 참고하여 기말고사 대체텀프로젝트를 수행 후\,\n\n파일들을 하나의 zip 파일로 압축하여 업로드 바랍니다.\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-25 04:55
 DTEND:20260610T145900Z
 DTSTART:20260601T150000Z
 SUMMARY:[지능형영상처리_02] [과제]기말고사 대체 텀프로젝트
-UID:c604bbb4-7d8c-4e98-8dae-f138270c0642@c604.org
+UID:065a5cb1-8771-49a8-835e-aa16ff483c0e@065a.org
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:
-TRIGGER:P4DT9H
+TRIGGER:-P2DT15H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:
-TRIGGER:P6DT9H
+TRIGGER:-PT15H
 END:VALARM
-DESCRIPTION:과목: 인공지능_02\n\n[과제 내용]\n9_3 코딩 결과를 캡쳐해서 업로딩하세요\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-24 05:15
-DTEND:20260609T145900Z
-DTSTART:20260601T150000Z
-SUMMARY:[인공지능_02] [과제]9_3 코딩 결과를 캡쳐해서 업로딩하세요
-UID:911106c6-97c3-426a-878e-ee7901e8c387@9111.org
+DESCRIPTION:과목: 3D엔진프로그래밍_02\n\n[과제 내용]\n프로젝트 최종평가 (점수 공유)\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-25 04:55
+DTEND:20260612T145900Z
+DTSTART:20260611T150000Z
+SUMMARY:[3D엔진프로그래밍_02] [과제]프로젝트 최종평가 (점수 공유)
+UID:18f0d1d5-4045-485d-a8e1-7f1048c08278@18f0.org
 END:VEVENT
 END:VCALENDAR
