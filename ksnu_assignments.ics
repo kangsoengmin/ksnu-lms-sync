@@ -12,11 +12,11 @@ ACTION:DISPLAY
 DESCRIPTION:
 TRIGGER:-PT15H
 END:VALARM
-DESCRIPTION:과목: 3D엔진프로그래밍_02\n\n[과제 내용]\n기말고사 코딩테스트 (제출용)\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-29 04:40
+DESCRIPTION:과목: 3D엔진프로그래밍_02\n\n[과제 내용]\n기말고사 코딩테스트 (제출용)\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-30 05:12
 DTEND:20260616T071000Z
 DTSTART:20260615T150000Z
 SUMMARY:[3D엔진프로그래밍_02] [과제]기말고사 코딩테스트 (제출용)
-UID:8c58829e-6e70-45d6-b61c-c5e34de2c5da@8c58.org
+UID:91a7d8b4-b640-4b61-b2af-f7e1bd42f68b@91a7.org
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -29,11 +29,11 @@ ACTION:DISPLAY
 DESCRIPTION:
 TRIGGER:-P1DT5H10M
 END:VALARM
-DESCRIPTION:과목: 3D엔진프로그래밍_02\n\n[과제 내용]\n\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-29 04:40
+DESCRIPTION:과목: 3D엔진프로그래밍_02\n\n[과제 내용]\n\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-30 05:12
 DTEND:20260616T055000Z
 DTSTART:20260616T051000Z
 SUMMARY:[3D엔진프로그래밍_02] [시험][기말고사]기말고사
-UID:11f11556-cb62-4638-91c0-7c53c8960ed1@11f1.org
+UID:e8a93b3d-fe21-4cc3-ab14-fbfadb616279@e8a9.org
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -46,10 +46,10 @@ ACTION:DISPLAY
 DESCRIPTION:
 TRIGGER:-PT15H
 END:VALARM
-DESCRIPTION:과목: 기계학습_01\n\n[과제 내용]\n상세 내용을 가져오지 못했습니다.\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-29 04:40
+DESCRIPTION:과목: 기계학습_01\n\n[과제 내용]\n프로젝트 보고서\, 발표자료\, 발표영상\, 그리고 실행가능한 소스코드를 제출해주세요.\n\n출처: 군산대 eClass\n최신화 시간: 2026-06-30 05:12
 DTEND:20260615T145900Z
 DTSTART:20260614T150000Z
 SUMMARY:[기계학습_01] [과제]기말 프로젝트 제출
-UID:0671e44c-b451-4e05-bac2-fa113ee9f15d@0671.org
+UID:7949f66a-170f-4b00-966c-d945a7094686@7949.org
 END:VEVENT
 END:VCALENDAR
